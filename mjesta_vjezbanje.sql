@@ -19,3 +19,6 @@ select count(*) from mjesto where zupanija=19;
 
 #Preimenuj stupac naziv u grad za sve gradove iz zagrebačke županije
 select zupanija,naziv as grad from mjesto where zupanija=1;
+
+#odaberi sva mjesta koja nisu u Zagrebu i Zagrebačkoj županiji; logički operator !
+select * from mjesto where zupanija!=1 and zupanija!=21;
