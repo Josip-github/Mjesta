@@ -29,3 +29,12 @@ select * from mjesto where naziv='Požega'; #zupanija 11
 
 #in
 select zupanija, naziv as grad from mjesto where zupanija in(11,17);
+
+#Odaberi sva mjesta koja u sebi sadrže "ra"
+select * from mjesto where naziv like '%ra%';
+
+#Odaberi sva mjesta koja počinju s "top"
+select * from mjesto where naziv like 'top%';
+
+#Odaberi sva mjesta koja završavaju s "ić"
+select * from mjesto where naziv like '%ić';
