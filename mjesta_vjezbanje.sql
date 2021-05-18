@@ -38,3 +38,11 @@ select * from mjesto where naziv like 'top%';
 
 #Odaberi sva mjesta koja završavaju s "ić"
 select * from mjesto where naziv like '%ić';
+
+#update
+update mjesto set naziv='Kloštar' where naziv='Kloštar Ivanić';
+select * from mjesto where zupanija=1;
+
+update mjesto set naziv='Graberje' where naziv like 'Gra%';
+select * from mjesto where naziv like 'Gra%';
+
