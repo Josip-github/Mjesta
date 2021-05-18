@@ -22,3 +22,10 @@ select zupanija,naziv as grad from mjesto where zupanija=1;
 
 #odaberi sva mjesta koja nisu u Zagrebu i Zagrebačkoj županiji; logički operator !
 select * from mjesto where zupanija!=1 and zupanija!=21;
+
+#odaberi sve gradove iz pož-sl i spl-dalm županije
+select * from mjesto where naziv='Split'; #zupanija=17
+select * from mjesto where naziv='Požega'; #zupanija 11
+
+#in
+select zupanija, naziv as grad from mjesto where zupanija in(11,17);
